@@ -1,0 +1,277 @@
+:root {
+  color-scheme: dark;
+  --bg: #05070f;
+  --bg-card: #0f1324;
+  --bg-card-soft: #12172b;
+  --bg-accent: linear-gradient(135deg, #5f5bff, #9b5cf6);
+  --text: #f6f8ff;
+  --text-muted: #c2c6e2;
+  --border: rgba(255, 255, 255, 0.08);
+  --accent: #9b5cf6;
+  --accent-soft: rgba(155, 92, 246, 0.15);
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: radial-gradient(circle at top, rgba(155, 92, 246, 0.15), #05070f),
+    var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+.hero {
+  padding: 2.5rem clamp(1.5rem, 6vw, 6rem) 4rem;
+  background: radial-gradient(circle at 20% 20%, rgba(95, 91, 255, 0.3), transparent),
+    radial-gradient(circle at 80% 0, rgba(155, 92, 246, 0.25), transparent);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.logo {
+  font-family: "Space Grotesk", "Inter", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero-content {
+  max-width: 720px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.85rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.8rem, 6vw, 4.8rem);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.9rem 1.8rem;
+  border-radius: 999px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.btn.primary {
+  background: var(--bg-accent);
+  color: white;
+}
+
+.btn.ghost {
+  border-color: var(--border);
+  color: var(--text);
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.stat-card {
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 1.2rem;
+  background: rgba(15, 19, 36, 0.5);
+}
+
+.stat-value {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.section {
+  padding: 4rem clamp(1.5rem, 6vw, 6rem);
+}
+
+.section-header {
+  max-width: 720px;
+  margin-bottom: 2.5rem;
+}
+
+.section h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+.section p {
+  color: var(--text-muted);
+}
+
+.research-grid,
+.resource-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card {
+  border-radius: 1.4rem;
+  padding: 1.8rem;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.card[data-link] {
+  cursor: pointer;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.card[data-link]:hover,
+.card[data-link]:focus-visible {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+  outline: none;
+}
+
+.card a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.highlights {
+  background: rgba(5, 7, 15, 0.8);
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.milestone {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.8rem;
+  border-radius: 1.4rem;
+  border: 1px solid var(--border);
+  background: var(--bg-card-soft);
+  flex-wrap: wrap;
+}
+
+.milestone-year {
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.milestone a {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.milestone-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.vision {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  background: rgba(15, 19, 36, 0.6);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.vision-points {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.vision-points div {
+  padding: 1.2rem 1.5rem;
+  border-radius: 1.2rem;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.footer {
+  padding: 3rem clamp(1.5rem, 6vw, 6rem);
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-note {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .milestone {
+    flex-direction: column;
+  }
+}
+
