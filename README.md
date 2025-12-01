@@ -1,6 +1,6 @@
 # USTC AGI · Table Mining Homepage
 
-This repository hosts the static website for the USTC AGI Table Mining Group.  
+This repository hosts the static website for the USTC AGI Table Mining Group, detailed in https://ustcagi-table-mining.github.io.  
 It showcases our research pillars, flagship papers, and resources that span benchmarks, reasoning frameworks, and domain-specific datasets.
 
 ## Local preview
