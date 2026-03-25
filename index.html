@@ -1,396 +1,592 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>USTC AGI  Group</title>
-    <meta
-      name="description"
-      content="USTC AGI Group advances table understanding, reasoning, and autonomous agents with large language models."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <header class="hero">
-      <nav class="nav">
-        <div class="logo">USTC AGI</div>
-        <div class="nav-links">
-          <a href="#research">Research</a>
-          <a href="#highlights">Highlights</a>
-          <a href="#resources">Resources</a>
-          <a href="#contact">Contact</a>
-        </div>
+<html lang="zh-CN" data-lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表格挖掘方向 · 中国科学技术大学</title>
+  <meta name="description" content="USTC AGI Table Mining Group advances table understanding, reasoning, and autonomous agents with large language models.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-lang="zh">
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <div class="site-logo">
+        <span class="zh">表格挖掘方向</span>
+        <span class="en">Table Mining</span>
+      </div>
+      <nav class="site-nav">
+        <a href="#news"><span class="zh">动态</span><span class="en">News</span></a>
+        <a href="#research"><span class="zh">研究方向</span><span class="en">Research</span></a>
+        <a href="#publications"><span class="zh">论文</span><span class="en">Publications</span></a>
+        <a href="#opensource"><span class="zh">开源</span><span class="en">Open Source</span></a>
+        <a href="#contact"><span class="zh">联系</span><span class="en">Contact</span></a>
+        <button class="lang-btn" id="langToggle">EN</button>
       </nav>
-      <div class="hero-content">
-        <p class="eyebrow">Table Mining Initiative</p>
-        <h1>Intelligent Table Reasoning for AGI Research</h1>
-        <p class="hero-subtitle">
-          The USTC AGI Table Mining Group designs benchmarks, toolchains, and
-          autonomous agents that push the boundaries of table understanding,
-          time-series reasoning, and multimodal analytics.
-        </p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#highlights">Explore Work</a>
-          <a class="btn ghost" href="#contact">Collaborate</a>
-        </div>
-      </div>
-      <div class="hero-stats">
-        <div class="stat-card">
-          <span class="stat-value">Research Focus</span>
-          <span class="stat-label">Table OCR, Temporal Table Classification, Table Reasoning, Table Agents</span>
-        </div>
-      </div>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section id="research" class="section research">
-        <div class="section-header">
-          <p class="eyebrow">Research Pillars</p>
-          <h2>From Recognition to Autonomous Table Agents</h2>
-          <p>
-            We connect perception, language, and reasoning to make tables first
-            class citizens for AGI systems.
-          </p>
-        </div>
-        <div class="research-grid">
-          <article
-            class="card focus"
-            data-link="https://arxiv.org/abs/2412.20662"
-            tabindex="0"
-          >
-            <img src="assert/NGTR.png" alt="NGTR Framework" class="card-image" />
-            <h3>Table Recognition</h3>
-            <p>
-              NGTR benchmark plus Neighbor-Guided Toolchain Reasoner improve
-              table structure parsing for low-quality inputs.
-            </p>
-            <a href="https://arxiv.org/abs/2412.20662" target="_blank"
-              >NGTR · IJCAI 2025 →</a
-            >
-            <a href="https://github.com/lqzxt/NGTR" target="_blank">GitHub →</a>
-          </article>
-          <article
-            class="card focus"
-            data-link="https://arxiv.org/abs/2411.15737"
-            tabindex="0"
-          >
-            <img src="assert/TableTime.png" alt="TableTime Framework" class="card-image" />
-            <h3>Temporal Table Intelligence</h3>
-            <p>
-              TableTime reformulates multivariate time-series classification as
-              table understanding with training-free LLM reasoning.
-            </p>
-            <a href="https://arxiv.org/abs/2411.15737" target="_blank"
-              >TableTime · CIKM 2025 →</a
-            >
-            <a href="https://github.com/realwangjiahao/tabletime" target="_blank"
-              >GitHub →</a
-            >
-          </article>
-          <article
-            class="card focus"
-            data-link="https://arxiv.org/abs/2511.11233v1"
-            tabindex="0"
-          >
-            <img src="assert/STaR.png" alt="STaR Framework" class="card-image" />
-            <h3>Slow Table Reasoning</h3>
-            <p>
-              STaR develops slow-thinking LLMs with uncertainty-aware inference
-              for stable multi-hop table reasoning.
-            </p>
-            <a href="https://arxiv.org/abs/2511.11233v1" target="_blank"
-              >STaR · WWW 2026 →</a
-            >
-            <a href="https://github.com/zhjai/STaR" target="_blank">GitHub →</a>
-          </article>
-          <article
-            class="card focus"
-            data-link="https://arxiv.org/abs/2412.04272"
-            tabindex="0"
-          >
-            <div class="card-images">
-              <img src="assert/PoTable.png" alt="PoTable Framework" class="card-image" />
-              <img src="assert/TableMind.png" alt="TableMind Framework" class="card-image" />
-            </div>
-            <h3>Table Agents</h3>
-            <p>
-              PoTable and TableMind deliver plan-then-execute reasoning and
-              tool-augmented agents for trustworthy analytics.
-            </p>
-            <a href="https://arxiv.org/abs/2412.04272" target="_blank"
-              >PoTable · Preprint →</a
-            >
-            <a href="https://github.com/Double680/PoTable" target="_blank"
-              >PoTable GitHub →</a
-            >
-            <a href="https://arxiv.org/abs/2509.06278" target="_blank"
-              >TableMind · WSDM 2026 →</a
-            >
-            <a href="https://github.com/lennendd/TableMind-Repo" target="_blank"
-              >TableMind GitHub →</a
-            >
-          </article>
-          <article
-            class="card focus"
-            data-link="https://arxiv.org/abs/2506.11375"
-            tabindex="0"
-          >
-            <img src="assert/ChemTable.png" alt="ChemTable Framework" class="card-image" />
-            <h3>Domain Benchmarks</h3>
-            <p>
-              ChemTable captures multimodal chemical tables to assess recognition
-              and reasoning across scientific workflows.
-            </p>
-            <a href="https://arxiv.org/abs/2506.11375" target="_blank"
-              >ChemTable · Preprint →</a
-            >
-            <a href="https://github.com/lqzxt/ChemTable" target="_blank"
-              >GitHub →</a
-            >
-          </article>
-          <article
-            class="card focus"
-            data-link="https://www.techrxiv.org/doi/full/10.36227/techrxiv.174352282.22844759"
-            tabindex="0"
-          >
-            <h3>Comprehensive Survey</h3>
-            <p>
-              A sweeping review of table mining with LLMs surfaces challenges,
-              advances, and future opportunities.
-            </p>
-            <a
-              href="https://www.techrxiv.org/doi/full/10.36227/techrxiv.174352282.22844759"
-              target="_blank"
-              >Table Mining Survey →</a
-            >
-          </article>
-        </div>
-      </section>
-
-      <section id="highlights" class="section highlights">
-        <div class="section-header">
-          <p class="eyebrow">Flagship Works</p>
-          <h2>Benchmarks, Frameworks, and Agents</h2>
-        </div>
-        <div class="timeline">
-          <article class="milestone">
-            <div>
-              <p class="milestone-year">2026</p>
-              <h3>TableMind · WSDM</h3>
-              <p>
-                Autonomous programmatic agent with tool-augmented reasoning,
-                RAPO training, and sandboxed execution for reliable analytics.
-              </p>
-            </div>
-            <div class="milestone-links">
-              <a href="https://arxiv.org/abs/2509.06278" target="_blank"
-                >Paper →</a
-              >
-              <a href="https://github.com/lennendd/TableMind-Repo" target="_blank"
-                >GitHub →</a
-              >
-            </div>
-          </article>
-          <article class="milestone">
-            <div>
-              <p class="milestone-year">2025</p>
-              <h3>NGTR · IJCAI</h3>
-              <p>
-                Hierarchical benchmark plus neighbor-guided toolchain to fix
-                low-quality table images and boost VLLM recognition.
-              </p>
-            </div>
-            <div class="milestone-links">
-              <a href="https://arxiv.org/abs/2412.20662" target="_blank"
-                >Paper →</a
-              >
-              <a href="https://github.com/lqzxt/NGTR" target="_blank"
-                >GitHub →</a
-              >
-            </div>
-          </article>
-          <article class="milestone">
-            <div>
-              <p class="milestone-year">2025</p>
-              <h3>TableTime · CIKM</h3>
-              <p>
-                Converts multivariate time series to textual tables, enabling
-                zero-shot classification with LLM reasoning pipelines.
-              </p>
-            </div>
-            <div class="milestone-links">
-              <a href="https://arxiv.org/abs/2411.15737" target="_blank"
-                >Paper →</a
-              >
-              <a href="https://github.com/realwangjiahao/tabletime" target="_blank"
-                >GitHub →</a
-              >
-            </div>
-          </article>
-          <article class="milestone">
-            <div>
-              <p class="milestone-year">2026</p>
-              <h3>STaR · WWW</h3>
-              <p>
-                Slow-thinking LLMs with uncertainty-aware inference create
-                transparent, stable multi-hop table reasoning trajectories.
-              </p>
-            </div>
-            <div class="milestone-links">
-              <a href="https://arxiv.org/abs/2511.11233v1" target="_blank"
-                >Paper →</a
-              >
-              <a href="https://github.com/zhjai/STaR" target="_blank"
-                >GitHub →</a
-              >
-            </div>
-          </article>
-          <article class="milestone">
-            <div>
-              <p class="milestone-year">2024+</p>
-              <h3>PoTable</h3>
-              <p>
-                Stage-oriented plan-execute agents deliver transparent reasoning
-                for trustworthy table analytics.
-              </p>
-            </div>
-            <div class="milestone-links">
-              <a href="https://arxiv.org/abs/2412.04272" target="_blank"
-                >Paper →</a
-              >
-              <a href="https://github.com/Double680/PoTable" target="_blank"
-                >GitHub →</a
-              >
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="resources" class="section resources">
-        <div class="section-header">
-          <p class="eyebrow">Resources</p>
-          <h2>Toolchains, Data, and Guidance</h2>
-        </div>
-        <div class="resource-grid">
-          <article class="card resource">
-            <h3>NGTR Benchmark Suite</h3>
-            <p>
-              Structured evaluation pipeline, visual toolchain, and reflection
-              module for robust table recognition.
-            </p>
-          </article>
-          <article class="card resource">
-            <h3>TableTime Reasoning Stack</h3>
-            <p>
-              Prompt templates, neighborhood assistance, and multi-path inference
-              ready for zero-shot classification.
-            </p>
-          </article>
-          <article class="card resource">
-            <h3>Agentic Tool Libraries</h3>
-            <p>
-              Plan-then-execute operation sets with code generation, sandbox
-              execution, and feedback monitoring.
-            </p>
-          </article>
-          <article class="card resource">
-            <h3>ChemTable Dataset</h3>
-            <p>
-              Expert-curated chemical tables with cell polygons, logical layouts,
-              and domain labels.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section vision">
-        <div class="vision-content">
-          <h2>Why Table Mining Now?</h2>
-          <p>
-            Tables are the connective tissue of scientific reports, enterprise
-            systems, and financial decision making. We elevate tables to become
-            native reasoning artifacts for AGI, empowering models with precise
-            structure, semantic context, and executable toolchains.
-          </p>
-        </div>
-        <div class="vision-points">
-          <div>
-            <h3>Human-AI Collaboration</h3>
-            <p>
-              Multi-stage workflows provide interpretable reasoning plans and
-              verifiable outputs for analysts.
-            </p>
-          </div>
-          <div>
-            <h3>Simulation to Deployment</h3>
-            <p>
-              Benchmarks mirror messy real-world tables so agents stay robust
-              beyond curated datasets.
-            </p>
-          </div>
-          <div>
-            <h3>Open Science</h3>
-            <p>
-              We share toolchains, prompts, and datasets to accelerate community
-              progress in structured reasoning.
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer id="contact" class="footer">
-      <div>
-        <p class="eyebrow">Connect</p>
-        <h3>Join the Table Mining Community</h3>
-        <p>
-          We welcome collaborations on benchmarks, industry datasets, and
-          real-world deployments of table reasoning agents.
-        </p>
-      </div>
-      <div class="footer-actions">
-        <a class="btn primary" href="mycheng@ustc.edu.cn">Email Us</a>
-        <a class="btn ghost" href="https://github.com/USTCAGI" target="_blank"
-          >GitHub</a
-        >
-      </div>
-      <p class="footer-note">
-        © <span id="year"></span> USTC AGI · Table Mining Group. All rights
-        reserved.
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <p class="hero-affiliation">
+        <span class="zh">中国科学技术大学 · 认知智能全国重点实验室</span>
+        <span class="en">University of Science and Technology of China · National Key Laboratory of Cognitive Intelligence</span>
       </p>
-    </footer>
+      <h1 class="hero-title">
+        <span class="zh">表格挖掘方向</span>
+        <span class="en">Table Mining Initiative</span>
+      </h1>
+      <p class="hero-desc">
+        <span class="zh">专注于表格理解、推理与自主智能体的前沿研究，覆盖表格识别、结构化推理、多模态分析及领域应用，持续推动表格智能分析技术的研究边界。</span>
+        <span class="en">Advancing table understanding, reasoning, and autonomous agents with large language models — from structure recognition to multi-hop inference, domain benchmarks, and agentic analytics.</span>
+      </p>
+      <div class="hero-links">
+        <a href="#publications" class="btn btn-primary">
+          <span class="zh">查看论文</span>
+          <span class="en">Publications</span>
+        </a>
+        <a href="https://github.com/USTCAGI" class="btn btn-secondary" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
 
-    <script>
-      // 页面加载后写入年份
-      document.getElementById("year").textContent = new Date().getFullYear();
+  <!-- News -->
+  <section class="section section-alt" id="news">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="zh">最新动态</span>
+        <span class="en">News</span>
+      </h2>
+      <div class="news-list">
 
-      // 让支持 data-link 的卡片整体可点击
-      document.querySelectorAll(".card[data-link]").forEach((card) => {
-        const openLink = () => {
-          const target = card.dataset.link;
-          if (target) {
-            window.open(target, "_blank", "noopener");
+        <article class="news-item">
+          <div class="news-date">2026.03</div>
+          <div class="news-content">
+            <h3 class="news-title">
+              <span class="zh">TabClaw 开源发布，面向个性化、自进化的本地交互式表格分析 AI 智能体。</span>
+              <span class="en">TabClaw is open-sourced, introducing a personalized, self-evolving local AI agent for interactive table analysis.</span>
+            </h3>
+            <p class="news-desc">
+              <span class="zh">TabClaw 支持 CSV/Excel 输入与自然语言目标，融合计划先行、并行智能体、记忆与技能蒸馏机制，实现全流程交互式表格分析。</span>
+              <span class="en">TabClaw takes CSV/Excel inputs with natural language goals, combining plan-before-act, parallel agents, memory, and skill distillation for end-to-end interactive table analytics.</span>
+            </p>
+            <div class="news-links">
+              <a href="https://github.com/fishsure/TabClaw" target="_blank" rel="noopener" class="pub-link">GitHub</a>
+              <a href="https://agentr1.github.io/tab-claw/" target="_blank" rel="noopener" class="pub-link">Project</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="news-item">
+          <div class="news-date">2026.03</div>
+          <div class="news-content">
+            <h3 class="news-title">
+              <span class="zh">TableMind++ 预印本发布，提出不确定性感知的程序化智能体，用于工具增强的表格推理。</span>
+              <span class="en">TableMind++ preprint released, introducing an uncertainty-aware programmatic agent for tool-augmented table reasoning.</span>
+            </h3>
+            <p class="news-desc">
+              <span class="zh">TableMind++ 在 TableMind 基础上引入记忆引导计划剪枝、置信度动作精化与双权重轨迹聚合，有效缓解 LLM 幻觉问题。</span>
+              <span class="en">TableMind++ extends TableMind with memory-guided plan pruning, confidence-based action refinement, and dual-weighted trajectory aggregation to mitigate LLM hallucinations.</span>
+            </p>
+            <div class="news-links">
+              <a href="https://arxiv.org/abs/2603.07528" target="_blank" rel="noopener" class="pub-link">arXiv</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="news-item">
+          <div class="news-date">2026.03</div>
+          <div class="news-content">
+            <h3 class="news-title">
+              <span class="zh">STaR 被 WWW 2026 录用，探索慢思考 LLM 在表格多跳推理中的应用。</span>
+              <span class="en">STaR was accepted to WWW 2026, advancing slow-thinking LLMs for multi-hop table reasoning.</span>
+            </h3>
+            <p class="news-desc">
+              <span class="zh">该工作利用不确定性感知推理机制，显著提升了表格多跳推理的稳定性与可解释性。</span>
+              <span class="en">This work leverages uncertainty-aware inference to build transparent and stable reasoning trajectories over structured tables.</span>
+            </p>
+            <div class="news-links">
+              <a href="https://arxiv.org/abs/2511.11233v1" target="_blank" rel="noopener" class="pub-link">arXiv</a>
+              <a href="https://github.com/zhjai/STaR" target="_blank" rel="noopener" class="pub-link">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="news-item">
+          <div class="news-date">2026.01</div>
+          <div class="news-content">
+            <h3 class="news-title">
+              <span class="zh">TableMind 被 WSDM 2026 录用，提出基于工具增强与沙箱执行的自主表格分析智能体。</span>
+              <span class="en">TableMind was accepted to WSDM 2026, introducing a tool-augmented autonomous agent for trustworthy table analytics.</span>
+            </h3>
+            <p class="news-desc">
+              <span class="zh">TableMind 结合计划–执行推理范式与 RAPO 训练策略，构建可靠的表格分析工作流。</span>
+              <span class="en">TableMind combines plan-then-execute reasoning with RAPO training and sandboxed execution for reliable table analysis.</span>
+            </p>
+            <div class="news-links">
+              <a href="https://arxiv.org/abs/2509.06278" target="_blank" rel="noopener" class="pub-link">Paper</a>
+              <a href="https://github.com/lennendd/TableMind-Repo" target="_blank" rel="noopener" class="pub-link">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="news-item">
+          <div class="news-date">2025.05</div>
+          <div class="news-content">
+            <h3 class="news-title">
+              <span class="zh">NGTR 被 IJCAI 2025 录用，提出基于邻域引导工具链的表格识别框架与评测基准。</span>
+              <span class="en">NGTR was accepted to IJCAI 2025, proposing a neighbor-guided toolchain reasoner and hierarchical benchmark for table recognition.</span>
+            </h3>
+            <p class="news-desc">
+              <span class="zh">NGTR 通过层次化基准与视觉工具链，有效提升了低质量表格图像的结构解析能力。</span>
+              <span class="en">NGTR employs a hierarchical benchmark and visual toolchain to robustly parse structure in low-quality table images.</span>
+            </p>
+            <div class="news-links">
+              <a href="https://arxiv.org/abs/2412.20662" target="_blank" rel="noopener" class="pub-link">Paper</a>
+              <a href="https://github.com/lqzxt/NGTR" target="_blank" rel="noopener" class="pub-link">Code</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Directions -->
+  <section class="section" id="research">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="zh">研究方向</span>
+        <span class="en">Research Areas</span>
+      </h2>
+      <div class="research-grid">
+
+        <div class="research-card">
+          <div class="research-num">01</div>
+          <h3>
+            <span class="zh">表格结构识别</span>
+            <span class="en">Table Structure Recognition</span>
+          </h3>
+          <p>
+            <span class="zh">面向复杂表格图像的结构解析，构建层次化评测基准与视觉工具链，提升低质量输入的识别鲁棒性。</span>
+            <span class="en">Structure parsing for complex table images with hierarchical benchmarks and visual toolchains to improve robustness on low-quality inputs.</span>
+          </p>
+        </div>
+
+        <div class="research-card">
+          <div class="research-num">02</div>
+          <h3>
+            <span class="zh">时序表格智能</span>
+            <span class="en">Temporal Table Intelligence</span>
+          </h3>
+          <p>
+            <span class="zh">将多变量时间序列重构为文本表格，利用大语言模型实现零样本时序分类与推理。</span>
+            <span class="en">Reformulating multivariate time series as textual tables to enable training-free LLM-based classification and zero-shot reasoning.</span>
+          </p>
+        </div>
+
+        <div class="research-card">
+          <div class="research-num">03</div>
+          <h3>
+            <span class="zh">慢思考表格推理</span>
+            <span class="en">Slow-Thinking Table Reasoning</span>
+          </h3>
+          <p>
+            <span class="zh">基于不确定性感知的慢思考推理机制，构建可解释、稳定的多跳表格推理轨迹。</span>
+            <span class="en">Uncertainty-aware slow-thinking LLMs that create transparent and stable multi-hop table reasoning trajectories.</span>
+          </p>
+        </div>
+
+        <div class="research-card">
+          <div class="research-num">04</div>
+          <h3>
+            <span class="zh">表格分析智能体</span>
+            <span class="en">Table Analysis Agents</span>
+          </h3>
+          <p>
+            <span class="zh">融合计划–执行范式、工具调用与沙箱执行的自主表格分析智能体，实现可信赖的结构化数据分析。</span>
+            <span class="en">Autonomous agents combining plan-then-execute reasoning, tool augmentation, and sandboxed execution for trustworthy table analytics.</span>
+          </p>
+        </div>
+
+        <div class="research-card">
+          <div class="research-num">05</div>
+          <h3>
+            <span class="zh">领域表格基准</span>
+            <span class="en">Domain Table Benchmarks</span>
+          </h3>
+          <p>
+            <span class="zh">面向化学、科学报告等特定领域，构建专业多模态表格评测数据集，推动跨领域表格理解研究。</span>
+            <span class="en">Expert-curated multimodal table benchmarks for chemical and scientific domains to advance cross-domain table understanding.</span>
+          </p>
+        </div>
+
+        <div class="research-card">
+          <div class="research-num">06</div>
+          <h3>
+            <span class="zh">综述与基础研究</span>
+            <span class="en">Survey &amp; Foundation</span>
+          </h3>
+          <p>
+            <span class="zh">系统梳理大语言模型驱动的表格挖掘研究进展，识别挑战与未来机遇，为领域发展提供参考。</span>
+            <span class="en">Comprehensive reviews of LLM-driven table mining, surfacing open challenges and future opportunities for the community.</span>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section class="section section-alt" id="publications">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="zh">论文列表</span>
+        <span class="en">Publications</span>
+      </h2>
+
+      <div class="pub-filters">
+        <button class="filter-btn active" data-filter="all"><span class="zh">全部</span><span class="en">All</span></button>
+        <button class="filter-btn" data-filter="recognition"><span class="zh">表格识别</span><span class="en">Recognition</span></button>
+        <button class="filter-btn" data-filter="reasoning"><span class="zh">推理</span><span class="en">Reasoning</span></button>
+        <button class="filter-btn" data-filter="agent"><span class="zh">智能体</span><span class="en">Agent</span></button>
+        <button class="filter-btn" data-filter="temporal"><span class="zh">时序</span><span class="en">Temporal</span></button>
+        <button class="filter-btn" data-filter="survey"><span class="zh">综述</span><span class="en">Survey</span></button>
+      </div>
+
+      <!-- Preprint -->
+      <div class="pub-year-group">
+        <h3 class="pub-year">Preprint</h3>
+        <ul class="pub-list">
+
+          <li class="pub-item" data-tags="agent reasoning">
+            <div class="pub-venue-wrap">
+              <span class="pub-venue preprint">Preprint</span>
+              <span class="tag agent">Agent</span>
+            </div>
+            <div class="pub-content">
+              <h4 class="pub-title">TableMind++: An Uncertainty-Aware Programmatic Agent for Tool-Augmented Table Reasoning</h4>
+              <p class="pub-authors">Mingyue Cheng, Shuo Yu, Chuang Jiang, Xiaoyu Tao, Qingyang Mao, Jie Ouyang, Qi Liu, Enhong Chen</p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/abs/2603.07528" target="_blank" rel="noopener" class="pub-link">arXiv</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="pub-item" data-tags="agent">
+            <div class="pub-venue-wrap">
+              <span class="pub-venue preprint">Preprint</span>
+              <span class="tag agent">Agent</span>
+            </div>
+            <div class="pub-content">
+              <h4 class="pub-title">TabClaw: A Local AI Agent for Conversational Table Analysis</h4>
+              <p class="pub-authors">Shuo Yu, Daoyu Wang, Qingchuan Li, Xiaoyu Tao, Qingyang Mao, Yitong Zhou, Mingyue Cheng*, Qi Liu, Enhong Chen</p>
+              <div class="pub-links">
+                <a href="https://github.com/fishsure/TabClaw" target="_blank" rel="noopener" class="pub-link">GitHub</a>
+                <a href="https://agentr1.github.io/tab-claw/" target="_blank" rel="noopener" class="pub-link">Project</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="pub-item" data-tags="agent reasoning">
+            <div class="pub-venue-wrap">
+              <span class="pub-venue preprint">Preprint</span>
+              <span class="tag agent">Agent</span>
+            </div>
+            <div class="pub-content">
+              <h4 class="pub-title">PoTable: Programming Standardly as a Table Expert</h4>
+              <p class="pub-authors">Xinshi Chen, Jiahao Wang, Mingyue Cheng*, et al.</p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/abs/2412.04272" target="_blank" rel="noopener" class="pub-link">arXiv</a>
+                <a href="https://github.com/Double680/PoTable" target="_blank" rel="noopener" class="pub-link">Code</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="pub-item" data-tags="recognition survey">
+            <div class="pub-venue-wrap">
+              <span class="pub-venue preprint">Preprint</span>
+              <span class="tag survey">Survey</span>
+            </div>
+            <div class="pub-content">
+              <h4 class="pub-title">A Comprehensive Survey of Table Mining with Large Language Models</h4>
+              <p class="pub-authors">USTC AGI Research Group</p>
+              <div class="pub-links">
+                <a href="https://www.techrxiv.org/doi/full/10.36227/techrxiv.174352282.22844759" target="_blank" rel="noopener" class="pub-link">PDF</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="pub-item" data-tags="recognition">
+            <div class="pub-venue-wrap">
+              <span class="pub-venue preprint">Preprint</span>
+              <span class="tag recognition">Recognition</span>
+            </div>
+            <div class="pub-content">
+              <h4 class="pub-title">ChemTable: A Multimodal Chemical Table Benchmark for Recognition and Reasoning</h4>
+              <p class="pub-authors">USTC AGI Research Group</p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/abs/2506.11375" target="_blank" rel="noopener" class="pub-link">arXiv</a>
+                <a href="https://github.com/lqzxt/ChemTable" target="_blank" rel="noopener" class="pub-link">Code</a>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- 2026 -->
+      <div class="pub-year-group">
+        <h3 class="pub-year">2026</h3>
+        <ul class="pub-list">
+
+          <li class="pub-item" data-tags="reasoning">
+            <div class="pub-venue-wrap">
+              <span class="pub-venue www">WWW 2026</span>
+              <span class="tag reasoning">Reasoning</span>
+            </div>
+            <div class="pub-content">
+              <h4 class="pub-title">STaR: Slow Thinking with LLMs for Stable and Transparent Table Reasoning</h4>
+              <p class="pub-authors">USTC AGI Research Group</p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/abs/2511.11233v1" target="_blank" rel="noopener" class="pub-link">PDF</a>
+                <a href="https://github.com/zhjai/STaR" target="_blank" rel="noopener" class="pub-link">Code</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="pub-item" data-tags="agent reasoning">
+            <div class="pub-venue-wrap">
+              <span class="pub-venue wsdm">WSDM 2026</span>
+              <span class="tag agent">Agent</span>
+            </div>
+            <div class="pub-content">
+              <h4 class="pub-title">TableMind: Tool-Augmented Autonomous Agent for Trustworthy Table Analytics</h4>
+              <p class="pub-authors">USTC AGI Research Group</p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/abs/2509.06278" target="_blank" rel="noopener" class="pub-link">PDF</a>
+                <a href="https://github.com/lennendd/TableMind-Repo" target="_blank" rel="noopener" class="pub-link">Code</a>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- 2025 -->
+      <div class="pub-year-group">
+        <h3 class="pub-year">2025</h3>
+        <ul class="pub-list">
+
+          <li class="pub-item" data-tags="recognition">
+            <div class="pub-venue-wrap">
+              <span class="pub-venue ijcai">IJCAI 2025</span>
+              <span class="tag recognition">Recognition</span>
+            </div>
+            <div class="pub-content">
+              <h4 class="pub-title">NGTR: Neighbor-Guided Toolchain Reasoner for Table Structure Recognition</h4>
+              <p class="pub-authors">USTC AGI Research Group</p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/abs/2412.20662" target="_blank" rel="noopener" class="pub-link">PDF</a>
+                <a href="https://github.com/lqzxt/NGTR" target="_blank" rel="noopener" class="pub-link">Code</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="pub-item" data-tags="temporal reasoning">
+            <div class="pub-venue-wrap">
+              <span class="pub-venue cikm">CIKM 2025</span>
+              <span class="tag temporal">Temporal</span>
+            </div>
+            <div class="pub-content">
+              <h4 class="pub-title">TableTime: Reformulating Time Series Classification as Zero-Shot Table Understanding via Large Language Models</h4>
+              <p class="pub-authors">Jiahao Wang, Mingyue Cheng*, Qingyang Mao, Qi Liu, Feiyang Xu, Xin Li, Enhong Chen</p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/abs/2411.15737" target="_blank" rel="noopener" class="pub-link">PDF</a>
+                <a href="https://github.com/realwangjiahao/TableTime" target="_blank" rel="noopener" class="pub-link">Code</a>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Open Source -->
+  <section class="section" id="opensource">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="zh">开源项目</span>
+        <span class="en">Open Source</span>
+      </h2>
+      <div class="project-grid">
+
+        <article class="project-card">
+          <div class="project-head">
+            <span class="project-tag">Recognition</span>
+            <h3 class="project-title">NGTR</h3>
+          </div>
+          <p class="project-desc">
+            <span class="zh">面向低质量表格图像识别的邻域引导工具链推理框架，配套层次化评测基准。</span>
+            <span class="en">A neighbor-guided toolchain reasoner for robust table recognition on low-quality images, with a hierarchical benchmark suite.</span>
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/lqzxt/NGTR" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <span class="project-tag">Temporal</span>
+            <h3 class="project-title">TableTime</h3>
+          </div>
+          <p class="project-desc">
+            <span class="zh">将多变量时间序列转换为文本表格，利用 LLM 零样本推理完成时序分类任务。</span>
+            <span class="en">Converts multivariate time series into textual tables, enabling zero-shot LLM-based time series classification.</span>
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/realwangjiahao/TableTime" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <span class="project-tag">Reasoning</span>
+            <h3 class="project-title">STaR</h3>
+          </div>
+          <p class="project-desc">
+            <span class="zh">利用慢思考 LLM 与不确定性感知推理，实现稳定透明的表格多跳推理。</span>
+            <span class="en">Slow-thinking LLMs with uncertainty-aware inference for stable and transparent multi-hop table reasoning.</span>
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/zhjai/STaR" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <span class="project-tag">Agent</span>
+            <h3 class="project-title">TableMind</h3>
+          </div>
+          <p class="project-desc">
+            <span class="zh">工具增强的自主表格分析智能体，支持 RAPO 训练与沙箱执行，实现可信赖的表格分析。</span>
+            <span class="en">Tool-augmented autonomous agent with RAPO training and sandboxed execution for trustworthy table analytics.</span>
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/lennendd/TableMind-Repo" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <span class="project-tag">Agent</span>
+            <h3 class="project-title">TabClaw</h3>
+          </div>
+          <p class="project-desc">
+            <span class="zh">个性化、自进化的本地交互式表格分析 AI 智能体，支持计划先行、并行智能体、记忆与技能蒸馏。</span>
+            <span class="en">A personalized, self-evolving local AI agent for conversational table analysis, featuring plan-before-act, parallel agents, memory, and skill distillation.</span>
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/fishsure/TabClaw" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
+            <a href="https://agentr1.github.io/tab-claw/" target="_blank" rel="noopener" class="btn btn-secondary">Project</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <span class="project-tag">Agent</span>
+            <h3 class="project-title">PoTable</h3>
+          </div>
+          <p class="project-desc">
+            <span class="zh">计划–执行范式驱动的表格分析智能体，通过标准化编程操作集实现可解释的表格分析。</span>
+            <span class="en">A stage-oriented plan-and-execute agent delivering interpretable and verifiable table analytics through standardized programming operations.</span>
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/Double680/PoTable" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <span class="project-tag">Benchmark</span>
+            <h3 class="project-title">ChemTable</h3>
+          </div>
+          <p class="project-desc">
+            <span class="zh">专为化学领域构建的多模态表格评测数据集，包含单元格多边形标注、逻辑布局与领域标签。</span>
+            <span class="en">Expert-curated chemical table dataset with cell polygons, logical layouts, and domain labels for multimodal recognition and reasoning.</span>
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/lqzxt/ChemTable" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer / Contact -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <p>
+        <span class="zh">© 2025 表格挖掘方向 · 中国科学技术大学认知智能全国重点实验室 &nbsp;·&nbsp; 联系：<a href="mailto:mycheng@ustc.edu.cn" style="color:inherit">mycheng@ustc.edu.cn</a></span>
+        <span class="en">© 2025 Table Mining · National Key Laboratory of Cognitive Intelligence, USTC &nbsp;·&nbsp; Contact: <a href="mailto:mycheng@ustc.edu.cn" style="color:inherit">mycheng@ustc.edu.cn</a></span>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Language toggle
+    const langToggle = document.getElementById('langToggle');
+    const body = document.body;
+    langToggle.addEventListener('click', () => {
+      const current = body.getAttribute('data-lang');
+      const next = current === 'zh' ? 'en' : 'zh';
+      body.setAttribute('data-lang', next);
+      langToggle.textContent = next === 'zh' ? 'EN' : '中文';
+    });
+
+    // Publication filter
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const pubItems = document.querySelectorAll('.pub-item');
+    const pubYearGroups = document.querySelectorAll('.pub-year-group');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+        pubItems.forEach(item => {
+          if (filter === 'all') {
+            item.classList.remove('hidden');
+          } else {
+            const tags = item.getAttribute('data-tags') || '';
+            item.classList.toggle('hidden', !tags.includes(filter));
           }
-        };
-
-        card.addEventListener("click", (event) => {
-          if (event.target.closest("a")) return;
-          openLink();
         });
-
-        card.addEventListener("keydown", (event) => {
-          if (event.key === "Enter" && !event.target.closest("a")) {
-            openLink();
-          }
+        pubYearGroups.forEach(group => {
+          const hasVisible = group.querySelectorAll('.pub-item:not(.hidden)').length > 0;
+          group.style.display = hasVisible ? '' : 'none';
         });
       });
-    </script>
-  </body>
-</html>
+    });
 
+    // Active nav on scroll
+    const sections = document.querySelectorAll('section[id], footer[id]');
+    const navLinks = document.querySelectorAll('.site-nav a');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => {
+            link.style.color = link.getAttribute('href') === '#' + entry.target.id
+              ? 'var(--accent)' : '';
+          });
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    sections.forEach(s => observer.observe(s));
+  </script>
+</body>
+</html>
